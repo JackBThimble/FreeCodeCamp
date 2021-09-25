@@ -16,8 +16,11 @@ function App() {
 
   return (
     <>
-      <Grid container xs={12} justifyContent="center">
-        <Editor text={text} setText={setText} />
+      <Grid container xs={12} justifyContent="center"
+        sx={{bgcolor: 'primary.light'}}>
+        <Grid container item xs={12} justifyContent="center">
+          <Editor text={text} setText={setText} />
+        </Grid>
         <Grid container item xs={12} justifyContent="center">
           <Preview text={text}/>
         </Grid>
